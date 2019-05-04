@@ -12,20 +12,20 @@ const createRouter = function (data) {
     res.json(data[req.params.id]);
   });
 
-  router.post('/', (req, res) => {
-    data.push(req.body);
-    res.json(data);
-  });
-
-  router.put('/:id', (req, res) => {
-    data[req.params.id] = req.body;
-    res.json(data);
-  });
-
-  router.delete('/:id', (req, res) => {
-    data.splice(req.params.id, 1);
-    res.json(data);
-  });
+  // router.post('/', (req, res) => {
+  //   data.push(req.body);
+  //   res.json(data);
+  // });
+  //
+  // router.put('/:id', (req, res) => {
+  //   data[req.params.id] = req.body;
+  //   res.json(data);
+  // });
+  //
+  // router.delete('/:id', (req, res) => {
+  //   data.splice(req.params.id, 1);
+  //   res.json(data);
+  // });
 
   return router;
 
