@@ -63,6 +63,7 @@ div.docs-wrapper {
   align-items: center;
   justify-content: center;
   min-height: 10vh;
+  font-family: 'Architects Daughter', cursive;
 }
 
 div.example-json-wrapper {
@@ -75,4 +76,8 @@ div.example-json-wrapper {
 
 code {
   font-size: 0.7em;
+}
+
+pre {
+  padding: 0 3vw;
 }

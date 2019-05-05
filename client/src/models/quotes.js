@@ -5,6 +5,12 @@ const Quotes = function(){
   this.quotes = null;
 };
 
+Quotes.prototype.bindEvents = function () {
+  PubSub.subscribe('RandomQuoteView:clicked', (evt) => {
+    this.publishRandom();
+  })
+};
+
 Quotes.prototype.publishRandom = function () {
   const quotesCount = this.quotes.length;
   const randomQuoteIndex = Math.floor(Math.random() * quotesCount)

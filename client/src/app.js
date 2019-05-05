@@ -9,5 +9,6 @@ window.addEventListener('DOMContentLoaded',() => {
   randomQuoteView.bindEvents();
 
   const quotes = new Quotes();
+  quotes.bindEvents();
   quotes.getQuotes();
 })

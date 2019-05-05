@@ -14,6 +14,9 @@ RandomQuoteView.prototype.render = function (quote) {
   this.container.innerHTML = '';
   const quoteParagraph = document.createElement('p');
   quoteParagraph.textContent = quote;
+  quoteParagraph.addEventListener('click', (evt) => {
+    PubSub.publish('RandomQuoteView:clicked');
+  })
   this.container.appendChild(quoteParagraph);
 };
 
