@@ -32,5 +32,18 @@ module.exports = [
  {"quote": "Four for you, Glenn Coco! You go, Glenn Coco!"},
  {"quote": "How many of you have ever felt personally victimised by Regina George?"},
  {"quote": "It’s so fetch!"},
- {"quote": "The limit does not exist!"}
+ {"quote": "The limit does not exist!"},
+ {"quote": "I know it may look like I was being like a bitch, but that's only because I was acting like a bitch."},
+ {"quote": "Boo! You Whore!"},
+ {"quote": "You can't sit with us!"},
+ {"quote": "My nanna takes off her wig when she's drunk..."},
+ {"quote": "Is butter a carb?"},
+ {"quote": "I'm sorry that people are so jealous of me. But I can't help it that I'm popular."},
+ {"quote": "Don't have sex. Because you will get pregnant. And die."},
+ {"quote": "Stop trying to make fetch happen! It's not going to happen!"},
+ {"quote": "On October 3rd, he asked me what day it was."},
+ {"quote": "I love her, she's like a martian!"},
+ {"quote": "So that's against the rules, and you can't sit with us."},
+ {"quote": "She asked me how to spell orange."},
+ {"quote": "Oh, I love seeing teachers outside of school. It's like seeing a dog walk on its hind legs."}
 ];
