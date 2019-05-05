@@ -6,15 +6,15 @@ const RandomQuoteView = function(container){
 
 RandomQuoteView.prototype.bindEvents = function () {
   PubSub.subscribe('Quotes:random-quote-ready', (evt) => {
-    this.render(evt.detail);
+    this.render(evt.detail.quote);
   })
 };
 
 RandomQuoteView.prototype.render = function (quote) {
   this.container.innerHTML = '';
-  const quoteHeading = document.createElement('h2');
-  quoteHeading.textContent = quote;
-  this.container.appendChild(quoteHeading);
+  const quoteParagraph = document.createElement('p');
+  quoteParagraph.textContent = quote;
+  this.container.appendChild(quoteParagraph);
 };
 
 module.exports = RandomQuoteView;

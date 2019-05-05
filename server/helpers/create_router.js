@@ -1,4 +1,5 @@
 const express = require('express');
+const shuffle = require('./shuffle.js');
 
 const createRouter = function (data) {
 
@@ -8,24 +9,14 @@ const createRouter = function (data) {
     res.json(data);
   });
 
-  router.get('/:id', (req, res) => {
-    res.json(data[req.params.id]);
+  router.get('/random', (req, res) => {
+    const randomIndex = Math.floor(Math.random() * data.length)
+    res.json(data[randomIndex]);
   });
 
-  // router.post('/', (req, res) => {
-  //   data.push(req.body);
-  //   res.json(data);
-  // });
-  //
-  // router.put('/:id', (req, res) => {
-  //   data[req.params.id] = req.body;
-  //   res.json(data);
-  // });
-  //
-  // router.delete('/:id', (req, res) => {
-  //   data.splice(req.params.id, 1);
-  //   res.json(data);
-  // });
+  router.get('/:count', (req, res) => {
+    res.json(shuffle(data).slice(0, req.params.count));
+  });
 
   return router;
 
