@@ -77,7 +77,7 @@ div.example-json-wrapper {
   border-radius: 3px;
 }
 
-div.route-wrapper > h2 {
+div.route-wrapper > h2, a > h2 {
   text-decoration: underline;
   color: mediumvioletred;
 }
