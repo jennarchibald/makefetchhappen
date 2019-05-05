@@ -19,7 +19,8 @@ Quotes.prototype.publishRandom = function () {
 };
 
 Quotes.prototype.getQuotes = function () {
-  const request = new RequestHelper('http://makefetchhappen.herokuapp.com/api/quotes');
+  const url = window.location.origin;
+  const request = new RequestHelper(`${url}/api/quotes`);
   request.get()
   .then((quotes) => {
     this.quotes = quotes;
