@@ -2,13 +2,14 @@ body {
   background-color: deeppink;
   display: grid;
   grid-template-rows: 5vh auto 5vh auto 5vh auto;
-  grid-template-columns: auto 70vw auto;
+  grid-template-columns: auto 85vw auto;
   text-align: center;
   box-sizing: border-box;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 2vh;
   margin: 0px;
 }
+
 
 div.make-fetch-happen-wrapper {
   background-color: lightpink;
@@ -66,19 +67,19 @@ div.docs-wrapper {
   justify-content: center;
   min-height: 10vh;
   font-family: 'Architects Daughter', cursive;
+  margin-bottom: 3em;
 }
 
 div.example-json-wrapper {
   text-align: left;
   background-color: white;
-  max-width: 60vw;
+  width: 70vw;
   overflow-x: scroll;
   margin-bottom: 3vh;
   border-radius: 3px;
 }
 
 div.route-wrapper > h2, a > h2 {
-  text-decoration: underline;
   color: mediumvioletred;
 }
 
@@ -91,6 +92,6 @@ pre {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: mediumvioletred;
 }
