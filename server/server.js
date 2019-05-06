@@ -11,6 +11,11 @@ const publicPath = path.join(__dirname, '../client/public');
 app.use(express.static(publicPath));
 app.use(bodyParser.json());
 
+app.all("*", (req, res, next) => {
+    res.set("Access-Control-Allow-Origin", "*");
+    next();
+});
+
 const quotesRouter = createRouter(quotes);
 app.use('/api/quotes', quotesRouter);
 
